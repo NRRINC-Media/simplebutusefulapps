@@ -1,0 +1,22 @@
+{
+  "name": "Name-of-app",
+  "version": "1.0.0",
+  "description": "Desc of app, DO NOT CHANGE REPOSITORY.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/NRRINC-Media",
+  "keywords": [
+    "tags",
+    "here"
+  ],
+  "author": "NRRINC Media",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^10.1.2"
+  },
+  "dependencies": {
+    "nodejs": "0.0.0"
+  }
+}
