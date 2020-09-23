@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <script src="src/js/2.js"></script>
+    <style>
+        body {
+            padding-left: 25px
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-row-padding" style="margin:0 -16px" class="padding-left">
+        <p style="margin-left:8px;margin-bottom:4px;">Type a value in any of area to Convert!</p>
+        <div class="w3-half w3-margin-top">
+          <label>Feet</label>
+          <input id="inputFeet" class="w3-input w3-border" type="number" placeholder="Feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="w3-half w3-margin-top">
+          <label>Meters</label>
+          <input id="inputMeters" class="w3-input w3-border" type="number" placeholder="Meters" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="w3-half w3-margin-top">
+          <label>Inches</label>
+          <input id="inputInches" class="w3-input w3-border" type="number" placeholder="Inches" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="w3-half w3-margin-top">
+          <label>cm</label>
+          <input id="inputcm" class="w3-input w3-border" type="number" placeholder="cm" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="w3-half w3-margin-top">
+          <label>Yards</label>
+          <input id="inputYards" class="w3-input w3-border" type="number" placeholder="Yards" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="w3-half w3-margin-top">
+          <label>Kilometers</label>
+          <input id="inputKilometers" class="w3-input w3-border" type="number" placeholder="Kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="w3-half w3-margin-top">
+          <label>Miles</label>
+          <input id="inputMiles" class="w3-input w3-border" type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+      </div>
+</body>
+</html>
