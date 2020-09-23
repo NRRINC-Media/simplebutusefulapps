@@ -18,5 +18,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^10.1.2"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dropzone": "^11.2.0"
   }
 }
