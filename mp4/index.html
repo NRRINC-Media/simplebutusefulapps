@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp4 Player</title>
+    <script>(function localFileVideoPlayer() {
+        'use strict'
+      var URL = window.URL || window.webkitURL
+      var displayMessage = function (message, isError) {
+        var element = document.querySelector('#message')
+        element.innerHTML = message
+        element.className = isError ? 'error' : 'info'
+      }
+      var playSelectedFile = function (event) {
+        var file = this.files[0]
+        var type = file.type
+        var videoNode = document.querySelector('video')
+        var canPlay = videoNode.canPlayType(type)
+        if (canPlay === '') canPlay = 'no'
+        var message = 'Can play type "' + type + '": ' + canPlay
+        var isError = canPlay === 'no'
+        displayMessage(message, isError)
+    
+        if (isError) {
+          return
+        }
+    
+        var fileURL = URL.createObjectURL(file)
+        videoNode.src = fileURL
+      }
+      var inputNode = document.querySelector('input')
+      inputNode.addEventListener('change', playSelectedFile, false)
+    })()
+    </script>
+    <link rel="stylesheet" href="src/css/1.css">
+</head>
+<body>
+
+  <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+    {({getRootProps, getInputProps}) => (
+      <section>
+        <div {...getRootProps()}>
+          <input {...getInputProps()} />
+          <p>Drag 'n' drop some files here, or click to select files</p>
+        </div>
+      </section>
+</body>
