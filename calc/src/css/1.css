@@ -5,6 +5,7 @@
     border: 2px solid black;
     margin: 0px auto;
     padding: 20px 20px 100px 20px;
+    background-color: rgba(0, 75, 255, 1.0)
   }
   #agh{
     position: relative;
