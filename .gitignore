@@ -3,3 +3,4 @@ mp4/node_modules/electron/dist/electron
 pwa/demo-1/node_modules
 pwa/demo-1/npm-debug.log
 pwa/demo-1/.DS_Store
+node_modules/
